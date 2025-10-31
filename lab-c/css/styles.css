@@ -73,7 +73,10 @@ main a:hover
 }
 
 /* STEP 7: PSEUDOELEMENT Selector - Build a selector below that targets the first letter of a BLOCKQUOTE element, then set the font-size to '2em' */
-
+blockquote::first-letter 
+{
+  font-size: 2em;
+}
 
 /* STEP 8: DECENDENT/CONTEXTUAL Selector - Type a selector that targets P elements that are contained by a FOOTER element, and set the text-align property to 'right' */
 
