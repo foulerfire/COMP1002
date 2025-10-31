@@ -32,7 +32,7 @@ main aside {
 */
 .new-feature 
 {
-		display: inline-block;
+	display: inline-block;
 	padding-right: 25px;
 	background-image: url("../images/new.png");
 	background-repeat: no-repeat;
@@ -41,7 +41,10 @@ main aside {
 
 
 /* STEP 4: ID Selector - Create a selector that targets the specific element id (emailAddress) for the email form field on the home page, and set the font-weight property to 'bold' */
-
+#emailAddress
+{
+  font-weight: bold;
+}
 
 /* STEP 5: ATTRIBUTE Selector - Build a CSS selector that targets hyperlinks that have the rel attribute set to the value 'external', then add the following properties and values (this will add a little external-link icon to the link):
 	padding-left: 20px;
