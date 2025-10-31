@@ -85,6 +85,9 @@ footer p
 }
 
 /* STEP 9: CHILD/DIRECT-DESCENDENT Selector - Assemble a CSS selector below that only targets P elements that are directly descended from a SECTION element, and set the text-indent property to '3em' */
-
+section > p 
+{
+  text-indent: 3em;
+}
 
 /* STEP 10: GROUPED Selector - To wrap up, create a selector that sets the color to 'white' for H1, H2 and FOOTER elements */
