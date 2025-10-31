@@ -79,7 +79,10 @@ blockquote::first-letter
 }
 
 /* STEP 8: DECENDENT/CONTEXTUAL Selector - Type a selector that targets P elements that are contained by a FOOTER element, and set the text-align property to 'right' */
-
+footer p 
+{
+  text-align: right;
+}
 
 /* STEP 9: CHILD/DIRECT-DESCENDENT Selector - Assemble a CSS selector below that only targets P elements that are directly descended from a SECTION element, and set the text-indent property to '3em' */
 
