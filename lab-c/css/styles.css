@@ -66,7 +66,11 @@ main a {
 	font-weight: bold;
 }
 /* STEP 6: PSEUDOCLASS Selector - Type a selector that targets A elements (hyperlinks) that are a decendent of the MAIN element (hint: see rule just above), and that are currently being hovered over by the mouse pointer - set the text-decoration to 'underline' and the color to orange */
-
+main a:hover 
+{
+  text-decoration: underline;
+  color: orange;
+}
 
 /* STEP 7: PSEUDOELEMENT Selector - Build a selector below that targets the first letter of a BLOCKQUOTE element, then set the font-size to '2em' */
 
