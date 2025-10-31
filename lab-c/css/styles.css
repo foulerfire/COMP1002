@@ -2,7 +2,8 @@
 
 /* STEP 2: TYPE/ELEMENT Selector - Create a selector that targets the HTML element, with a rule that sets the background-color to 'lightskyblue' */
 
-body {
+body 
+{
 	 background-color: lightskyblue;
 	font-family: Tahoma, Verdana, sans-serif;
 	margin: 0 auto;
@@ -10,16 +11,19 @@ body {
 	max-width: 1024px;
 }
 /* Arrange the SECTION and the ASIDE elements side-by-side in columns */
-main {
+main 
+{
 	display: flex;
 	flex-direction: row;
 	background-color: white;
 }
 /* Make the SECTION column a bit wider than the ASIDE column */
-main section {
+main section 
+{
 	width: 60%;
 }
-main aside {
+main aside 
+{
 	width: 40%;
 }
 
@@ -60,7 +64,8 @@ a[rel="external"]
   background-repeat: no-repeat;
   background-position: top left;
 }
-main a {
+main a 
+{
 	text-decoration: none;
 	color: lightskyblue;
 	font-weight: bold;
