@@ -91,3 +91,7 @@ section > p
 }
 
 /* STEP 10: GROUPED Selector - To wrap up, create a selector that sets the color to 'white' for H1, H2 and FOOTER elements */
+h1, h2, footer 
+{
+  color: white;
+}
