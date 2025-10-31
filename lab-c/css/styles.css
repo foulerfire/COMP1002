@@ -28,7 +28,10 @@ main aside {
 	padding-right: 25px;
 	background-image: url("../images/new.png");
 	background-repeat: no-repeat;
-	background-position: top right;
+		background-image: url("../images/new.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+*/background-position: top right;
 */
 .new-feature 
 {
@@ -48,14 +51,15 @@ main aside {
 
 /* STEP 5: ATTRIBUTE Selector - Build a CSS selector that targets hyperlinks that have the rel attribute set to the value 'external', then add the following properties and values (this will add a little external-link icon to the link):
 	padding-left: 20px;
-	background-image: url("../images/new.png");
-	background-repeat: no-repeat;
-	background-position: top left;
-*/
-
 
 /* Thank you to 'pnx' at https://openclipart.org/detail/202731/external-link-icon for the very cool external link icon */
-
+a[rel="external"] 
+{
+  padding-left: 20px;
+  background-image: url("../images/new.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
 main a {
 	text-decoration: none;
 	color: lightskyblue;
