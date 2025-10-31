@@ -30,6 +30,14 @@ main aside {
 	background-repeat: no-repeat;
 	background-position: top right;
 */
+.new-feature 
+{
+		display: inline-block;
+	padding-right: 25px;
+	background-image: url("../images/new.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
 
 
 /* STEP 4: ID Selector - Create a selector that targets the specific element id (emailAddress) for the email form field on the home page, and set the font-weight property to 'bold' */
