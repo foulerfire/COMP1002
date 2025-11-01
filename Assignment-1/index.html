@@ -9,18 +9,32 @@
     <p>Hello and welcome to Rest in Pepperoni's</p>
 
     <form action="/my-handling-form-page" method="post">
-        <p>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" />
-        </p>
-        <p>
-            <label for="Address">Address:</label>
-            <input type="email" id="mail" name="user_email" />
-        </p>
-        <p>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </p>
+                <legend>Customer Information</legend>
+
+                <p>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="customer_name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="customer_email" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="customer_phone" placeholder="555-555-5555">
+                </p>
+
+                <p>
+                    <label for="address">Delivery Address:</label>
+                    <input type="text" id="address" name="customer_address" required>
+                </p>
+
+                <p>
+                    <label for="delivery-date">Preferred Delivery Date:</label>
+                    <input type="date" id="delivery-date" name="delivery_date">
+                </p>
     </form>
 <hr>
 </body>
