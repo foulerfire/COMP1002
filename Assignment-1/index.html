@@ -2,41 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document Title</title>
+    <title>Assignment 1 - Pizza Order Form</title>
     <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-    <p>Hello and welcome to Rest in Pepperoni's</p>
+    <p>Hello and Welcome to Rest in Pepperoni's</p>
 
     <form action="/my-handling-form-page" method="post">
-                <legend>Customer Information</legend>
-
+            <h2>Customer Information</h2>
                 <p>
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="customer_name" required>
+                    <label for="customer-name">Full name:</label><br>
+                    <input id="customer-name" name="customer_name" type="text" required>
                 </p>
 
                 <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="customer_email" required>
+                    <label for="customer-email">Email:</label><br>
+                    <input id="customer-email" name="customer_email" type="email" required>
                 </p>
 
                 <p>
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="customer_phone" placeholder="555-555-5555">
+                    <label for="customer-address">Delivery address:</label><br>
+                    <input id="customer-address" name="customer_address" type="text">
+                </p>
+
+                <h2>Pizza Details</h2>
+                <p>
+                    <label for="pizza-quantity">Number of pizzas:</label><br>
+                    <input id="pizza-quantity" name="pizza_quantity" type="text" placeholder="e.g. 2">
                 </p>
 
                 <p>
-                    <label for="address">Delivery Address:</label>
-                    <input type="text" id="address" name="customer_address" required>
+                    <label for="pizza-size">Size:</label><br>
+                    <select id="pizza-size" name="pizza_size">
+                        <option value="small">Small (8 slices)</option>
+                        <option value="medium">Medium (10 slices)</option>
+                        <option value="large">Large (12 slices)</option>
+                        <option value="party">Party (16 slices)</option>
+                    </select>
                 </p>
 
-                <p>
-                    <label for="delivery-date">Preferred Delivery Date:</label>
-                    <input type="date" id="delivery-date" name="delivery_date">
-                </p>
+    
+    
     </form>
-<hr>
+
 </body>
 </html>
 
