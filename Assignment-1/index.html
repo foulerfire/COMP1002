@@ -5,116 +5,127 @@
     <title>Assignment 1 - Pizza Order Form</title>
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-<header><h1>Welcome to Rest in Pepperoni's</h1></header>
 
 <body>
-    <br><img src="images/pizza image.jpg" alt="Fresh Pepperoni Pizza" width="624" height="316">
+    <header>
+        <h1>Welcome to Rest in Pepperoni's</h1>
+    </header>
+
+    <br>
+    <img src="images/pizza image.jpg" alt="Fresh Pepperoni Pizza" width="624" height="316">
 
     <main>
-            <!--input form for customer information -->
-            <form action="process-order.php" method="get">
-                
-                        <h2>Customer Information</h2>
-                            <p>
-                                <label for="customer-name">Full name:</label><br>
-                                <input id="customer-name" name="customer_name" type="text" required>
-                            
-                            <p>
-                                <label for="customer-email">Email:</label><br>
-                                <input id="customer-email" name="customer_email" type="email" required>
-                            </p>
+        <!--input form for customer information -->
+        <form action="process-order.php" method="get">
+            <fieldset>
+            <legend>Customer Information</legend>
 
-                            <p>
-                                <label for="customer-address">Delivery address:</label><br>
-                                <input id="customer-address" name="customer_address" type="text">
-                            </p>
-                            
-                            <!--input area for number of pizzas -->
-                            <h2>Pizza Details</h2>
-                            <p>
-                                <label for="pizza-quantity">Number of pizzas:</label><br>
-                                <input id="pizza-quantity" name="pizza_quantity" type="text" placeholder="e.g. 2">
-                            </p>
-                            
-                            <!--dropdown list for pizza size -->
-                            <p>
-                                <label for="pizza-size">Size:</label><br>
-                                <select id="pizza-size" name="pizza_size">
-                                    <option value="small">Small (8 slices)</option>
-                                    <option value="medium">Medium (10 slices)</option>
-                                    <option value="large">Large (12 slices)</option>
-                                    <option value="party">Party (16 slices)</option>
-                                </select>
-                            </p>
+            <p>
+                <label for="customer-name">Full name:</label><br>
+                <input id="customer-name" name="customer_name" type="text" required>
+            </p>
 
-                            <!--radio buttons for choices in pizza shape -->
-                            <p>
-                            <h3>Pizza Shape</h3> 
-                            
-                                <input type="radio" name="pizza_shape" id="round" value="round" />
-                                <label for="sms">Round</label>
+            <p>
+                <label for="customer-email">Email:</label><br>
+                <input id="customer-email" name="customer_email" type="email" required>
+            </p>
 
-                                <input type="radio" name="pizza_shape" id="square" value="square" />
-                                <label for="sms">Square</label>
+            <p>
+                <label for="customer-address">Delivery address:</label><br>
+                <input id="customer-address" name="customer_address" type="text">
+            </p>
+            </fieldset>
+            <br>
+            <!--input area for number of pizzas -->
+            <h2>Pizza Details</h2>
 
-                            </p>
+            <p>
+                <label for="pizza-quantity">Number of pizzas:</label><br>
+                <input id="pizza-quantity" name="pizza_quantity" type="text" placeholder="e.g. 2">
+            </p>
 
-                            <!--radio buttons for crust choice -->
-                            <h3>Crust Type:</h3>
-                            <p>
-                                <input type="radio" name="pizza_crust" id="thin" value="thin" />
-                                <label for="sms">Thin</label>
-                                
-                                <input type="radio" name="pizza_crust" id="regular" value="regular" />
-                                <label for="sms">Regular</label>   
+            <!--dropdown list for pizza size -->
+            <p>
+                <label for="pizza-size">Size:</label><br>
+                <select id="pizza-size" name="pizza_size">
+                    <option value="small">Small (8 slices)</option>
+                    <option value="medium">Medium (10 slices)</option>
+                    <option value="large">Large (12 slices)</option>
+                    <option value="party">Party (16 slices)</option>
+                </select>
+            </p>
 
-                                <input type="radio" name="pizza_crust" id="deep-dish" value="deep-dish" />
-                                <label for="sms">Deep Dish</label>   
-                            </p>
-                            
-                            <!--checkboxes for topping choices -->
-                            <h3>Toppings</h3>
-                            <p>
-                                <input type="checkbox" name="toppings[]" id="Pepperoni" value="Pepperoni" />
-                                <label for="Pepperoni">Pepperoni</label>
-                                
-                                <input type="checkbox" name="toppings[]" id="Mushroom" value="Mushroom" />
-                                <label for="Mushroom">Mushroom</label>
+            <!--radio buttons for choices in pizza shape -->
+            <h3>Pizza Shape</h3>
+            <p>
+                <input type="radio" name="pizza_shape" id="round" value="round" />
+                <label for="round">Round</label>
 
-                                <input type="checkbox" name="toppings[]" id="Onion" value="Onion" />
-                                <label for="Onion">Onion</label>
+                <input type="radio" name="pizza_shape" id="square" value="square" />
+                <label for="square">Square</label>
+            </p>
 
-                                <input type="checkbox" name="toppings[]" id="Extra Cheese" value="Extra Cheese" />
-                                <label for="Extra Cheese">Extra Cheese</label>
-                                
-                                <input type="checkbox" name="toppings[]" id="Green Pepper" value="Green Pepper" />
-                                <label for="Green Pepper">Green Pepper</label>
+            <!--radio buttons for crust choice -->
+            <h3>Crust Type:</h3>
+            <p>
+                <input type="radio" name="pizza_crust" id="thin" value="thin" />
+                <label for="thin">Thin</label>
 
-                                <input type="checkbox" name="toppings[]" id="Roasted Garlic" value="Roasted Garlic" />
-                                <label for="Roasted Garlic">Roasted Garlic</label>
-                            </p>
-                            
-                            <!--radio Buttons for type of order, delivery, takeout, or dine in -->
-                            <h3>Order Type</h3>
-                                <input type="radio" name="ordertype" id="delivery" value="delivery"/>
-                                <label for="call">Delivery</label>
+                <input type="radio" name="pizza_crust" id="regular" value="regular" />
+                <label for="regular">Regular</label>
 
-                                <input type="radio" name="ordertype" id="Take-Out" value="Take-Out"/>
-                                <label for="call">Take-Out</label>
+                <input type="radio" name="pizza_crust" id="deep-dish" value="deep-dish" />
+                <label for="deep-dish">Deep Dish</label>
+            </p>
 
-                                <input type="radio" name="ordertype" id="Dine-In" value="Dine-In"/>
-                                <label for="call">Dine-In</label>
-                            </p>
-                            <!--textarea for customer to put special instructions -->
-                            <p>
-                                <h3>Special Instructions: </h3>
-                                <textarea id="special-instructions" name="special_instructions" rows="4" cols="40" placeholder="Please leave any special instructions here. Ex- Required gate code, leave at door, etc."></textarea>
-                            </p>
-                            <!-- reset and submit buttons-->
-                            <button type="reset">Reset</button>
-                            <button type="Submit">Submit</button>
-            </form>
+            <!--checkboxes for topping choices -->
+            <h3>Toppings</h3>
+            <p>
+                <input type="checkbox" name="toppings[]" id="Pepperoni" value="Pepperoni" />
+                <label for="Pepperoni">Pepperoni</label>
+
+                <input type="checkbox" name="toppings[]" id="Mushroom" value="Mushroom" />
+                <label for="Mushroom">Mushroom</label>
+
+                <input type="checkbox" name="toppings[]" id="Onion" value="Onion" />
+                <label for="Onion">Onion</label>
+
+                <input type="checkbox" name="toppings[]" id="Extra Cheese" value="Extra Cheese" />
+                <label for="Extra Cheese">Extra Cheese</label>
+
+                <input type="checkbox" name="toppings[]" id="Green Pepper" value="Green Pepper" />
+                <label for="Green Pepper">Green Pepper</label>
+
+                <input type="checkbox" name="toppings[]" id="Roasted Garlic" value="Roasted Garlic" />
+                <label for="Roasted Garlic">Roasted Garlic</label>
+            </p>
+
+            <!--radio Buttons for type of order, delivery, takeout, or dine in -->
+            <h3>Order Type</h3>
+            <p>
+                <input type="radio" name="ordertype" id="delivery" value="delivery" />
+                <label for="call">Delivery</label>
+
+                <input type="radio" name="ordertype" id="Take-Out" value="Take-Out" />
+                <label for="call">Take-Out</label>
+
+                <input type="radio" name="ordertype" id="Dine-In" value="Dine-In" />
+                <label for="call">Dine-In</label>
+            </p>
+
+            <!--textarea for customer to put special instructions -->
+            
+                <h3>Special Instructions: </h3>
+            <p>
+                <textarea id="special-instructions" name="special_instructions" rows="4" cols="40" placeholder="Please leave any special instructions here. Ex- Required gate code, leave at door, etc."></textarea>
+            </p>
+
+            <!-- reset and submit buttons-->
+            <button type="reset">Reset</button>
+            <button type="Submit">Submit</button>
+        </form>
     </main>
+
     <footer>
         <p>&copy; 2025 Rest in Pepperoni's</p>
     </footer>
