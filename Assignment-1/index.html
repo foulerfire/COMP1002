@@ -8,7 +8,8 @@
 
 <body>
     <p>Hello and Welcome to Rest in Pepperoni's</p>
-
+    
+    <!--Input form for customer information -->
     <form action="/my-handling-form-page" method="post">
             <h2>Customer Information</h2>
                 <p>
@@ -25,13 +26,15 @@
                     <label for="customer-address">Delivery address:</label><br>
                     <input id="customer-address" name="customer_address" type="text">
                 </p>
-
+                
+                <!--Dropdown list for number of pizzas -->
                 <h2>Pizza Details</h2>
                 <p>
                     <label for="pizza-quantity">Number of pizzas:</label><br>
                     <input id="pizza-quantity" name="pizza_quantity" type="text" placeholder="e.g. 2">
                 </p>
-
+                
+                <!--Dropdown list for pizza size -->
                 <p>
                     <label for="pizza-size">Size:</label><br>
                     <select id="pizza-size" name="pizza_size">
@@ -42,9 +45,9 @@
                     </select>
                 </p>
 
-    
-                <p>Pizza Shape</p>
+                <!--Radio Buttons for choices in pizza shape -->
                 <p>
+                <p>Pizza Shape</p> 
                     <label>
                         <input type="radio" name="pizza_shape" value="round" checked> Round
                     </label><br>
@@ -53,7 +56,8 @@
                         <input type="radio" name="pizza_shape" value="square" checked> Square
                     </label><br>
                 </p>
-
+                
+                <!--Radio Buttons for crust choice -->
                 <p>Crust Type:</p>
                 <p>
                     <label><input type="radio" name="pizza_crust" value="thin" checked> Thin</label><br>
@@ -61,6 +65,7 @@
                     <label><input type="radio" name="pizza_crust" value="deep-dish"> Deep Dish</label>
                 </p>
                 
+                <!--Checkboxes for topping choices -->
                 <p>Toppings</p>
                 <p>
                     <label><input type="checkbox" name = "toppings" value="Pepperoni"> Pepperoni </label>
@@ -70,8 +75,16 @@
                     <label><input type="checkbox" name = "toppings" value="Green Pepper"> Green Pepper </label>
                     <label><input type="checkbox" name = "toppings" value="Roasted Garlic"> Roasted Garlic </label>
                 </p>
-
-
+                
+                <!--Radio Buttons for type of order, delivery, takeout, or dine in -->
+                <p>Order Type</p>
+                    <input type="radio" name="ordertype" id="delivery" value="delivery"/>
+                    <label for="call">Delivery</label>
+                    <input type="radio" name="ordertype" id="Take-Out" value="Take-Out"/>
+                    <label for="call">Take-Out</label>
+                    <input type="radio" name="ordertype" id="Dine-In" value="Dine-In"/>
+                    <label for="call">Dine-In</label>
+                </p>
     </form>
 
 </body>
