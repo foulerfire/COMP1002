@@ -17,7 +17,7 @@
         <h2>Your Order Has Been Received!</h2>
 
         <?php
-            // capture all form data using GET command 
+            // capture all form data using GET 
             $name     = $_GET["customer_name"];
             $email    = $_GET["customer_email"];
             $address  = $_GET["customer_address"];
@@ -46,7 +46,8 @@
             echo '<h3>Toppings</h3>';
             echo '<ul>';
                 // loop through toppings array to ouput each selected topping
-                foreach ($toppings as $item) {
+                foreach ($toppings as $item) 
+                {
                     echo '<li>' . $item . '</li>';
                 }
             echo '</ul>';
