@@ -9,7 +9,8 @@ body
 }
 
 /* welcome message formatting */
-h1 {
+h1 
+{
     background-color: #b22222;
     color: #fff;
     margin: 0;
@@ -17,4 +18,16 @@ h1 {
     text-align: center;
     font-size: 2rem;
     letter-spacing: 1px;
+}
+
+/* center main content */
+main 
+{
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
