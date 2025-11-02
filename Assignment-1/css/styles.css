@@ -40,3 +40,24 @@ img
     max-width: 90%;          
     height: auto;            
 }
+
+h3 
+{
+    background-color: #7c1717;
+    color: #fff;
+    margin: 0;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+h2 
+{
+    background-color: #7c1717;
+    color: #fff;
+    margin: 0;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
