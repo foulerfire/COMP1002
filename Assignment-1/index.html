@@ -9,7 +9,7 @@
 <body>
     <p>Hello and Welcome to Rest in Pepperoni's</p>
     <main>
-    <!--Input form for customer information -->
+    <!--input form for customer information -->
  <form action="process-order.php" method="get">
       
             <h2>Customer Information</h2>
@@ -28,14 +28,14 @@
                     <input id="customer-address" name="customer_address" type="text">
                 </p>
                 
-                <!--Dropdown list for number of pizzas -->
+                <!--input area for number of pizzas -->
                 <h2>Pizza Details</h2>
                 <p>
                     <label for="pizza-quantity">Number of pizzas:</label><br>
                     <input id="pizza-quantity" name="pizza_quantity" type="text" placeholder="e.g. 2">
                 </p>
                 
-                <!--Dropdown list for pizza size -->
+                <!--dropdown list for pizza size -->
                 <p>
                     <label for="pizza-size">Size:</label><br>
                     <select id="pizza-size" name="pizza_size">
@@ -46,7 +46,7 @@
                     </select>
                 </p>
 
-                <!--Radio Buttons for choices in pizza shape -->
+                <!--radio buttons for choices in pizza shape -->
                 <p>
                 <p>Pizza Shape</p> 
                     <label>
@@ -58,7 +58,7 @@
                     </label><br>
                 </p>
                 
-                <!--Radio Buttons for crust choice -->
+                <!--radio buttons for crust choice -->
                 <p>Crust Type:</p>
                 <p>
                     <label><input type="radio" name="pizza_crust" value="thin" checked> Thin</label><br>
@@ -66,18 +66,18 @@
                     <label><input type="radio" name="pizza_crust" value="deep-dish"> Deep Dish</label>
                 </p>
                 
-                <!--Checkboxes for topping choices -->
+                <!--checkboxes for topping choices -->
                 <p>Toppings</p>
                 <p>
-                    <label><input type="checkbox" name = "toppings" value="Pepperoni"> Pepperoni </label>
-                    <label><input type="checkbox" name = "toppings" value="Mushroom"> Mushroom </label>
-                    <label><input type="checkbox" name = "toppings" value="Onion"> Onion </label>
-                    <label><input type="checkbox" name = "toppings" value="Extra Cheese"> Extra Cheese </label>
-                    <label><input type="checkbox" name = "toppings" value="Green Pepper"> Green Pepper </label>
-                    <label><input type="checkbox" name = "toppings" value="Roasted Garlic"> Roasted Garlic </label>
+                    <label><input type="checkbox" name="toppings[]" value="Pepperoni"> Pepperoni </label>
+                    <label><input type="checkbox" name="toppings[]" value="Mushroom"> Mushroom </label>
+                    <label><input type="checkbox" name="toppings[]" value="Onion"> Onion </label>
+                    <label><input type="checkbox" name="toppings[]" value="Extra Cheese"> Extra Cheese </label>
+                    <label><input type="checkbox" name="toppings[]" value="Green Pepper"> Green Pepper </label>
+                    <label><input type="checkbox" name="toppings[]" value="Roasted Garlic"> Roasted Garlic </label>
                 </p>
                 
-                <!--Radio Buttons for type of order, delivery, takeout, or dine in -->
+                <!--radio Buttons for type of order, delivery, takeout, or dine in -->
                 <p>Order Type</p>
                     <input type="radio" name="ordertype" id="delivery" value="delivery"/>
                     <label for="call">Delivery</label>
@@ -86,12 +86,12 @@
                     <input type="radio" name="ordertype" id="Dine-In" value="Dine-In"/>
                     <label for="call">Dine-In</label>
                 </p>
-                <!--Textarea for customer to put special instructions -->
+                <!--textarea for customer to put special instructions -->
                 <p>
                     <label for="special-instructions"> Special Instructions: </label><br>
-                    <textarea id="special-instrucions" name="special_instrucions" rows="4" cols="40" placeholder="Please leave any special instructions here. Ex- Required gate code, leave at door, etc."></textarea>
+                    <textarea id="special-instructions" name="special_instructions" rows="4" cols="40" placeholder="Please leave any special instructions here. Ex- Required gate code, leave at door, etc."></textarea>
                 </p>
-                <!-- Reset and Submit buttons-->
+                <!-- reset and submit buttons-->
                 <button type="reset">Reset</button>
                 <button type="Submit">Submit</button>
     </form>
