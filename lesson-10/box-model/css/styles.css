@@ -1,5 +1,6 @@
 
 /* STEP 3: Set character encoding (must be first line of file) */
+@charset "utf-8";
 /* STEP 4a: Set the border properties on the DIV#container - border-width, border-style, border-color */
 div#container {
 
