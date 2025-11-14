@@ -2,71 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document Title</title>
+    <title>Assignment 1 - Pizza Order Form</title>
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
-    <p>Hello and welcome to Rest in Pepperoni's</p>
 
-    <form action="/my-handling-form-page" method="post">
-        <p>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" />
-        </p>
-        <p>
-            <label for="Address">Address:</label>
-            <input type="email" id="mail" name="user_email" />
-        </p>
-        <p>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </p>
-    </form>
-<hr>
+<body>
+    <header>
+        <h1>Welcome to Rest in Pepperoni's</h1>
+    </header>
+
+    <br>
+    <img src="images/pizza image.jpg" alt="Fresh Pepperoni Pizza" width="624" height="316">
+
+    <main>
+        <!--input form for customer information -->
+        <form action="process-order.php" method="get">
+            <fieldset>
+            <legend>Customer Information</legend>
+
+            <p>
+                <label for="customer-name">Full name:</label><br>
+                <input id="customer-name" name="customer_name" type="text" required>
+            </p>
+
+            <p>
+                <label for="customer-email">Email:</label><br>
+                <input id="customer-email" name="customer_email" type="email" required>
+            </p>
+
+            <p>
+                <label for="customer-address">Delivery address:</label><br>
+                <input id="customer-address" name="customer_address" type="text">
+            </p>
+            </fieldset>
+            <br>
+            <!--input area for number of pizzas -->
+            <h2>Pizza Details</h2>
+
+            <p>
+                <label for="pizza-quantity">Number of pizzas:</label><br>
+                <input id="pizza-quantity" name="pizza_quantity" type="text" placeholder="e.g. 2">
+            </p>
+
+            <!--dropdown list for pizza size -->
+            <p>
+                <label for="pizza-size">Size:</label><br>
+                <select id="pizza-size" name="pizza_size">
+                    <option value="small">Small (8 slices)</option>
+                    <option value="medium">Medium (10 slices)</option>
+                    <option value="large">Large (12 slices)</option>
+                    <option value="party">Party (16 slices)</option>
+                </select>
+            </p>
+
+            <!--radio buttons for choices in pizza shape -->
+            <h3>Pizza Shape</h3>
+            <p>
+                <input type="radio" name="pizza_shape" id="round" value="round" />
+                <label for="round">Round</label>
+
+                <input type="radio" name="pizza_shape" id="square" value="square" />
+                <label for="square">Square</label>
+            </p>
+
+            <!--radio buttons for crust choice -->
+            <h3>Crust Type:</h3>
+            <p>
+                <input type="radio" name="pizza_crust" id="thin" value="thin" />
+                <label for="thin">Thin</label>
+
+                <input type="radio" name="pizza_crust" id="regular" value="regular" />
+                <label for="regular">Regular</label>
+
+                <input type="radio" name="pizza_crust" id="deep-dish" value="deep-dish" />
+                <label for="deep-dish">Deep Dish</label>
+            </p>
+
+            <!--checkboxes for topping choices -->
+            <h3>Toppings</h3>
+            <p>
+                <input type="checkbox" name="toppings[]" id="Pepperoni" value="Pepperoni" />
+                <label for="Pepperoni">Pepperoni</label>
+
+                <input type="checkbox" name="toppings[]" id="Mushroom" value="Mushroom" />
+                <label for="Mushroom">Mushroom</label>
+
+                <input type="checkbox" name="toppings[]" id="Onion" value="Onion" />
+                <label for="Onion">Onion</label>
+
+                <input type="checkbox" name="toppings[]" id="Extra Cheese" value="Extra Cheese" />
+                <label for="Extra Cheese">Extra Cheese</label>
+
+                <input type="checkbox" name="toppings[]" id="Green Pepper" value="Green Pepper" />
+                <label for="Green Pepper">Green Pepper</label>
+
+                <input type="checkbox" name="toppings[]" id="Roasted Garlic" value="Roasted Garlic" />
+                <label for="Roasted Garlic">Roasted Garlic</label>
+            </p>
+
+            <!--radio Buttons for type of order, delivery, takeout, or dine in -->
+            <h3>Order Type</h3>
+            <p>
+                <input type="radio" name="ordertype" id="delivery" value="delivery" />
+                <label for="call">Delivery</label>
+
+                <input type="radio" name="ordertype" id="Take-Out" value="Take-Out" />
+                <label for="call">Take-Out</label>
+
+                <input type="radio" name="ordertype" id="Dine-In" value="Dine-In" />
+                <label for="call">Dine-In</label>
+            </p>
+
+            <!--textarea for customer to put special instructions -->
+            
+                <h3>Special Instructions: </h3>
+            <p>
+                <textarea id="special-instructions" name="special_instructions" rows="4" cols="40" placeholder="Please leave any special instructions here. Ex- Required gate code, leave at door, etc."></textarea>
+            </p>
+
+            <!-- reset and submit buttons-->
+            <button type="reset">Reset</button>
+            <button type="Submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rest in Pepperoni's</p>
+    </footer>
 </body>
 </html>
-
-
-
-<!-- Construct a properly structured HTML document, including a proper DOCTYPE, character-encoding META tag, and a lang attribute on the HTML start tag.
-Structure the page with appropriate page-level sectioning elements (header, main and footer) to construct the main document outline.
-Think of the various pieces of information that you’d need to collect from someone to deliver them a pizza. This might include the following:
-Number of pizzas
-Size (number of slices)
-Shape (square or round)
-Toppings
-Deep dish, thin crust or some other crust types
-Take out, delivery, or eat-in g. And so on…
-Build a FORM that would allow a visitor to order their pizza(s), including a variety of form controls such as:
-labels
-fieldsets/legends
-text boxes
-select menus
-radio buttons
-checkboxes
-text areas
-submit/reset buttons
-…and any others that you feel make sense.
-As you are building out your page, be sure to make regular commits with comments that document your progress toward completion - this part is very important. Push each commit up to your remote repository on GitHub.
-Include at least one <img /> element to insert a relevant illustration or photograph inside a paragraph in the page with an alt attribute. Ensure that the type of file is appropriate to the image (.jpg for a photograph, .png or .gif for an illustration/graphic).
-Include helpful HTML comments to make the code more friendly and easy to maintain. Ensure that your code is also formatted appropriately.
-Commit any and all changes to your local Git repository, then push the changes up to your remote repository on GitHub.
-Have fun.  
-
-
-TAKE IT FURTHER
-
-
-
-Consider some more specific FORM elements like:
-phone
-email
-numerical input
-date
-option groups
-color
-range
-meter
-progress
-Capture some of the user form input and output it to another page to confirm the user’s order using a server-side script like PHP (you will need to use GitHub Pages for this as we did in Lesson 4 - see the lesson recording for how to set this up).
-Anything else you can think of…-->

@@ -1,8 +1,63 @@
+/* basic page styling */
 body 
 {
-	font-family: Tahoma, Verdana, sans-serif;
-	color: #000000;
-	background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f2ea; /* changed background to be slightly off white */
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
 }
 
+/* welcome message formatting */
+h1 
+{
+    background-color: #b22222;
+    color: #fff;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
 
+/* center main content */
+main 
+{
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* centers image and keeps it's proportions */
+img 
+{
+    display: block;          
+    margin: 0 auto 1.5rem;   
+    max-width: 90%;          
+    height: auto;            
+}
+
+h3 
+{
+    background-color: #7c1717;
+    color: #fff;
+    margin: 0;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+h2 
+{
+    background-color: #7c1717;
+    color: #fff;
+    margin: 0;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
