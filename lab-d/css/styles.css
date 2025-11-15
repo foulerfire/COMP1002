@@ -18,7 +18,7 @@ header {
 }
 /* STEP 1: Float the HEADER IMG to the left */
 header img {
-
+	float: left;
 }
 
 header a {
@@ -27,7 +27,7 @@ header a {
 /* STEP 2: Set the text-align for both the HEADER H1 and the HEADER H2 to right */
 header h1,
 header h2 {
-
+	text-align: right;
 }
 /* STEP 3a: Reduce the margin-bottom of the HEADER H1 to zero, so that the following H2 sit up a bit closer to the H1 */
 header h1 {
