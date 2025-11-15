@@ -31,22 +31,24 @@ header h2 {
 }
 /* STEP 3a: Reduce the margin-bottom of the HEADER H1 to zero, so that the following H2 sit up a bit closer to the H1 */
 header h1 {
-
+	margin-bottom: 0;
 }
 /* STEP 3b: The HEADER H2 has a margin-top by default, set that also to zero to bring it up a bit closer to the H1 */
 header h2 {
-
+	margin-top: 0;
 	text-transform: uppercase;
 }
 
 /* STEP 4d: There's a bit of padding-left on the UL element that contains the LI elements - set it to zero */
 header nav ul {
-
+	padding-left: 0;
 }
 
 /* STEP 4a: Apply a 1px dashed red outline around each of the LI elements inside the HEADER NAV so that we can see that each LI is a box (border-width, border-style, and border-color) */
 header nav li {
-
+	/* border: 1px dashed red;  temporary visual border (STEP 4a), now commented out (STEP 4e) */
+	display: inline-block;    
+	margin-right: 0.5em;     
 }
 /* STEP 4b: Set the above LI elements (which default to display: block as we can see in the browser), to display: inline-block so that they line up horizontally across the top of the page */
 
@@ -66,8 +68,10 @@ main {
 
 /* STEP 5a: Put a 1px dotted hotpink border around MAIN SECTION in the CSS rule below so we can see the box on the screen */
 main section {
-
+	/* border: 1px dotted hotpink;  temporary visual border (STEP 5a), now commented out (STEP 5d) */
 	width: 60%;
+	padding: 1em;     
+
 
 }
 /* STEP 5b: Add 1em of padding on the top, right, bottom, and left of the above MAIN SECTION element - watch the effect in the browser */
