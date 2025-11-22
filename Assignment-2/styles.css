@@ -1,43 +1,107 @@
+/* PAGE BACKGROUND */
 body 
 {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(4, 86, 99);
+
+    /* center the poster on the page */
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 
-body 
+/* POSTER CONTAINER */
+.poster 
 {
+    position: relative;              
+    width: 700px;                    
+    height: 1100px;                  
     background-image: url("images/poster_notext.png");
-    background-size: 700px auto;  /* adjust this number */
-    background-position: top center;  /* center the image */
-    background-repeat: no-repeat; /* stop repeating */
-    
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* TOP CREDITS */
+
+.top-credits 
+{
+    position: absolute;
+    top: 30px;                 /* move closer/further from top edge */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;                /* how wide the line of names is */
+    display: flex;
+    justify-content: space-between; /* push names to left/right edges */
+    align-items: center;
 }
 
 .top-credits h3 
 {
-    display: inline-block;
-    margin: 10 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding-left: 100px; /* move text right */
-    font-family: sans-serif;
+    margin: 0;
     color: white;
-    font-size: 35px;
+    font-family: "Times New Roman", Georgia, serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.35em;    /* big tracking like the poster */
+    white-space: nowrap;       /* keep each name on one line */
+}
+
+/* QUOTE */
+.quote 
+{
+    position: absolute;
+    top: 90px;                       /* move up/down over the sky area */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 54%;
+    text-align: center;
 }
 
 .quote blockquote 
 {
+    margin: 0;
     font-style: italic;
-    font-size: 1rem;
-    
+    font-size: 0.95rem;
 }
 
 .quote cite 
 {
     display: block;
     margin-top: 5px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     opacity: 0.8;
+}
+
+.title 
+{
+    position: absolute;
+    top: 210px;                    
+    left: 22%;
+    text-align: center;
+    white-space: nowrap;  
+}
+
+.title h1 
+{
+    font-size: 5rem;
+    margin: 0 0 10px;
+    font-family: "Mistral", "Brush Script MT", cursive;
+    color: white;
+}
+
+.byline 
+{
+    margin: 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.byline span 
+{
+    font-weight: bold;
 }
