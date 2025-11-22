@@ -3,26 +3,35 @@ body
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(4, 86, 99);
 }
-.poster 
+
+body 
 {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+    background-image: url("images/poster_notext.png");
+    background-size: 700px auto;  /* adjust this number */
+    background-position: top center;  /* center the image */
+    background-repeat: no-repeat; /* stop repeating */
+    
 }
 
 .top-credits h3 
 {
     display: inline-block;
-    margin: 0 20px;
+    margin: 10 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    padding-left: 100px; /* move text right */
+    font-family: sans-serif;
+    color: white;
+    font-size: 35px;
 }
 
 .quote blockquote 
 {
     font-style: italic;
     font-size: 1rem;
+    
 }
 
 .quote cite 
