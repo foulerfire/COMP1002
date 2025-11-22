@@ -80,14 +80,14 @@ body
 {
     position: absolute;
     top: 210px;                    
-    left: 22%;
+    left: 4%;
     text-align: center;
     white-space: nowrap;  
 }
 
 .title h1 
 {
-    font-size: 5rem;
+    font-size: 120px;
     margin: 0 0 10px;
     font-family: "Mistral", "Brush Script MT", cursive;
     color: white;
