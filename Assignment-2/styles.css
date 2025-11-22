@@ -1,18 +1,14 @@
-/* PAGE BACKGROUND */
 body 
 {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(4, 86, 99);
-
-    /* center the poster on the page */
     display: flex;
     justify-content: center;
     padding-top: 20px;
 }
 
-/* POSTER CONTAINER */
 .poster 
 {
     position: relative;              
@@ -25,17 +21,15 @@ body
     color: white;
 }
 
-/* TOP CREDITS */
-
 .top-credits 
 {
     position: absolute;
-    top: 30px;                 /* move closer/further from top edge */
+    top: 30px;                
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;                /* how wide the line of names is */
+    width: 80%;               
     display: flex;
-    justify-content: space-between; /* push names to left/right edges */
+    justify-content: space-between; 
     align-items: center;
 }
 
@@ -46,15 +40,14 @@ body
     font-family: "Times New Roman", Georgia, serif;
     text-transform: uppercase;
     font-size: 20px;
-    letter-spacing: 0.35em;    /* big tracking like the poster */
-    white-space: nowrap;       /* keep each name on one line */
+    letter-spacing: 0.35em;    
+    white-space: nowrap;       
 }
 
-/* QUOTE */
 .quote 
 {
     position: absolute;
-    top: 90px;                       /* move up/down over the sky area */
+    top: 90px;                     
     left: 50%;
     transform: translateX(-50%);
     width: 54%;
@@ -104,4 +97,23 @@ body
 .byline span 
 {
     font-weight: bold;
+}
+
+.tagline 
+{
+    position: absolute;
+    bottom: 115px; 
+    width: 100%;
+    text-align: center;
+    font-family: "Georgia",Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.tagline p 
+{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: white;
 }
