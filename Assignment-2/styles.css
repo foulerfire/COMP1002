@@ -2,34 +2,42 @@ body
 {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px 0 0 0;
     background-color: rgb(4, 86, 99);
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
 }
 
+/* Page layout: left sidebar – poster – right sidebar */
+.page-layout 
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* Poster container */
 .poster 
 {
-    position: relative;              
-    width: 700px;                    
-    height: 1100px;                  
+    position: relative;
+    width: 700px;
+    height: 1100px;
     background-image: url("images/poster_notext.png");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     color: white;
+    flex-shrink: 0;
 }
 
+/* Top actor names */
 .top-credits 
 {
     position: absolute;
-    top: 30px;                
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;               
+    top: 30px;
+    left: 10%;
+    width: 80%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -40,20 +48,19 @@ body
     font-family: "Times New Roman", Georgia, serif;
     text-transform: uppercase;
     font-size: 20px;
-    letter-spacing: 0.35em;    
-    white-space: nowrap;       
+    letter-spacing: 0.35em;
+    white-space: nowrap;
 }
 
+/* Quote section */
 .quote 
 {
     position: absolute;
-    top: 65px;                     
-    left: 50%;
-    transform: translateX(-50%);
+    top: 85px;
+    left: 25%;
     width: 54%;
     text-align: center;
-    color: rgb(255, 255, 255, 0.8);
-
+    color: rgba(255, 255, 255, 0.8); 
 }
 
 .quote blockquote 
@@ -71,13 +78,14 @@ body
     opacity: 0.8;
 }
 
+/* Title and byline */
 .title 
 {
     position: absolute;
-    top: 210px;                    
+    top: 210px;
     left: 4%;
     text-align: center;
-    white-space: nowrap;  
+    white-space: nowrap;
 }
 
 .title h1 
@@ -101,23 +109,24 @@ body
     font-weight: bold;
 }
 
+/* Sundance logo image */
 .sundance-logo 
 {
     position: absolute;
-    bottom: 155px;              
-    right: 35px;               
-    width: 120px;              
-    opacity: 0.8;              
+    bottom: 155px;
+    right: 35px;
+    width: 120px;
+    opacity: 0.8;
 }
 
+/* Tagline text */
 .tagline 
 {
     position: absolute;
-    bottom: 115px; 
+    bottom: 115px;
     width: 100%;
     text-align: center;
-    font-family: "Georgia",Georgia, 'Times New Roman', Times, serif;
-
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 .tagline p 
@@ -125,23 +134,95 @@ body
     margin: 0;
     font-size: 25px;
     font-weight: 300;
-    letter-spacing: .55px;
+    letter-spacing: 0.55px;
     color: white;
 }
 
+/* Credit block text */
 .credits 
 {
     position: absolute;
-    bottom: 55px;              
-    left: 50%;                   
-    transform: translateX(-50%); 
-    width: 90%;                
+    bottom: 55px;
+    left: 5%;
+    width: 90%;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 7px;
-    letter-spacing: 0.10em;  
+    letter-spacing: 0.10em;
     line-height: 1.3;
     color: rgba(255, 255, 255, 0.4);
-    padding: 0;                 
     text-transform: uppercase;
+}
+
+.credits p 
+{
+    margin: 0;
+}
+
+/* Left and right information panels */
+.left-info,
+.right-info 
+{
+    width: 420px;
+    color: white;
+    text-indent: 1.5em;
+    background-color: rgba(120, 180, 220, 0.25); 
+    border: 6px solid black;                   
+    padding: 20px;                                
+    border-radius: 8px;                           
+}
+
+.left-info h2,
+.right-info h2 
+{
+    text-decoration: underline;
+    margin-top: 0;
+    text-align: center;   
+}
+
+.left-info a 
+{
+    color: #dff9ff;
+    text-decoration: none;
+}
+
+.left-info a:hover 
+{
+    text-decoration: underline;
+}
+
+.right-info ul,
+.left-info ul 
+{
+    padding-left: 20px;
+}
+
+.disclaimer 
+{
+    opacity: 0.6;
+    font-size: 0.8rem;
+}
+
+/* Right sidebar image gallery */
+.right-gallery 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.right-gallery img 
+{
+    width: 280px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    opacity: 0.95;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.right-gallery img:hover 
+{
+    transform: scale(1.05);
+    opacity: 1;
 }

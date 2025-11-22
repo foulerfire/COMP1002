@@ -1,71 +1,116 @@
-<!-- The CSS Movie Poster
-DESCRIPTION
-On your own, select an interesting movie poster that contains a reasonable amount of textual content (at least a few paragraphs, some headings, some quotes, or other text-based content). Decide how you might assign a variety of HTML elements to the content, then build out a web version of the page. 
- 
-INSTRUCTIONS
-
-Pick an interesting movie poster (with enough image resolution to make out all the text). 
-Type out all of the textual copy from the poster into a code editor. 
-Mark up each part of the resulting document with a variety of HTML sectioning and phrasing elements. 
-Include a few useful hyperlinks to the official movie web site and/or some reviews.
-Add some interesting images to the page to make the poster look more convincing.
-Include some inline, embedded, or external CSS rules to visually control a variety of aspects of the page text (colour, font-family, font-size, alignment, line-height, line-height, etc.). Do your best to approximate the appearance of the original text of the movie poster you selected for the assignment - it does not need to look exactly the same.
-Validate the resulting HTML document (proceed to http://validator.w3.org).
-Upload your HTML page and any images to your Web server and determine the URL to view the result.
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swiss Army Man – Movie Poster</title>
+    <title>Swiss Army Man – CSS Movie Poster</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="poster">
-        <header class="top-credits">
-            <h3>Paul Dano</h3>
-            <h3>Daniel Radcliffe</h3>
-        </header>
+    <div class="page-layout">
 
-        <section class="quote">
-            <blockquote>
-               <p> “In A WORLD... </p>
-               <p>filled with reboots, remakes, and franchise sequels,
-                it's refreshing to see something so outlandishly different”
-            </blockquote>
-            <cite>— Adam Chitwood, Collider</cite>
-        </section>
+        <!-- Left panel -->
+        <aside class="left-info">
+            <h2>About the Movie</h2>
+            <p> In <em>Swiss Army Man</em> Hank Thompson, marooned and suicidal on a remote island, discovers a flatulent corpse that washes ashore. The corpse’s nonstop farts first confuse Hank, then allow him to ride it like a jet ski across the ocean to the mainland. The body also produces an endless supply of drinkable water when filled with runoff and gradually comes to life, learning to speak and naming itself Manny.
 
-        <section class="title">
-            <h1>Swiss Army Man</h1>
-            <p class="byline">A film by <span>Daniels</span></p>
-        </section>
+            <p>With no memory of his past, the innocent and uninhibited Manny follows Hank’s lead. Hank builds crude props from plants and trash to simulate civilization, teaching Manny about restaurants, movies, and parties. He invents a fantasy woman named Sarah (a real married woman Hank has secretly stalked and photographed from afar) and convinces Manny that he’s in love with her, using Manny himself as a living compass that always points them toward “her.”
+            Hank impersonates Sarah to coach Manny on romance, but the role-play ends with the two men kissing. When Hank confesses the deception, Manny feels betrayed and wishes to be fully dead again.</p> 
+            <p>Despite the rift, Manny later saves Hank from a bear by igniting a massive fart-flame from their campfire and carries the injured Hank straight to Sarah’s actual house—revealing they were never far from civilization.
+            At Sarah’s home, Manny terrifies her young daughter by demonstrating his bizarre powers. Police arrive, find Hank’s obsessive photos of Sarah, and take him into custody. In the chaos, Hank’s father briefly mistakes the corpse for his son, and Hank rants on live TV about Manny’s magic before fleeing with the body. </p> 
+            <p>Pursued to the beach by police, Sarah’s family, reporters, and his father, a cornered Hank lets out a long, defeated fart. As officers arrest him, Manny suddenly reanimates one final time, unleashing a torrent of flatulence that propels him across the ocean like a speedboat. Manny and Hank share one last smile as the corpse rockets away and vanishes over the horizon.</p>
+        </aside>
 
+        <!-- Center panel -->
+        <div class="poster-container">
+            <div class="poster">
+                
+                <!-- Actor names -->
+                <header class="top-credits">
+                    <h3>Paul Dano</h3>
+                    <h3>Daniel Radcliffe</h3>
+                </header>
 
-        <img class="sundance-logo" src="images/sundance_logo.png" alt="Sundance Award Logo">
+                <!-- Quote -->
+                <section class="quote">
+                    <blockquote>
+                        <p>“IN A WORLD... </p>
+                        <p>filled with reboots, remakes, and franchise sequels,
+                        it's refreshing to see something so outlandishly different”</p>
+                    </blockquote>
+                    <cite>— Adam Chitwood, Collider</cite>
+                </section>
 
+                <!-- Title & byline -->
+                <section class="title">
+                    <h1>Swiss Army Man</h1>
+                    <p class="byline">A film by <span>Daniels</span></p>
+                </section>
 
+                <!-- Tagline -->
+                <section class="tagline">
+                    <p>We all need some body to lean on.</p>
+                </section>
 
+                <!-- Bottom credit block -->
+                <section class="credits">
+                    <p>
+                        A24 PRESENTS A SUNDANCE FILMS PRESENTATION OF A FILM BY DANIELS “SWISS ARMY MAN”
+                        PAUL DANO DANIEL RADCLIFFE MARY ELIZABETH WINSTEAD MUSIC BY ANDY HULL AND ROBERT MCCOWELL
+                        COSTUME DESIGNER LIZZY WEISER EDITED BY MATTHEW HANNAM PRODUCTION DESIGNER JASON KISVARDAY
+                        DIRECTOR OF PHOTOGRAPHY LARKIN SEIPLE EXECUTIVE PRODUCERS PETER SARAF MARC TURTLETAUB
+                        TIM HEDEKER PRODUCED BY LAWRENCE INOND JONATHAN WANG WRITTEN AND DIRECTED BY
+                        DANIEL SCHEINERT AND DANIEL KWAN
+                    </p>
+                </section>
 
-        <section class="tagline">
-            <p>We all need some body to lean on.</p>
-        </section>
-        <section class="credits">
+                <!-- Sundance logo -->
+                <img class="sundance-logo"
+                     src="images/sundance_logo.png"
+                     alt="Sundance directing award logo">
+            </div>
+        </div>
+
+        <!-- Right panel -->
+        <aside class="right-info">
+            <h2>Poster Details</h2>
             <p>
-                A24 PRESENTS A SUNDANCE FILMS PRESENTATION OF A FILM BY DANIELS “SWISS ARMY MAN”
-                PAUL DANO DANIEL RADCLIFFE MARY ELIZABETH WINSTEAD MUSIC BY ANDY HULL AND ROBERT MCCOWELL
-                COSTUME DESIGNER LIZZY WEISER EDITED BY MATTHEW HANNAM PRODUCTION DESIGNER JASON KISVARDAY
-                DIRECTOR OF PHOTOGRAPHY LARKIN SEIPLE EXECUTIVE PRODUCERS PETER SARAF MARC TURTLETAUB
-                TIM HEDEKER PRODUCED BY LAWRENCE INOND JONATHAN WANG WRITTEN AND DIRECTED BY
-                DANIEL SCHEINERT AND DANIEL KWAN
+                I recreated this poster by:
             </p>
-        </section>
+            <ul>
+                <li>Removing all text from image</li>
+                <li>Copying poster text position using HTML & CSS</li>
+                <li>Overlaying a Sundance badge image </li>
+            </ul>
+
+            <h3>Links</h3>
+            <ul>
+                <li>
+                    <a href="https://a24films.com/films/swiss-army-man" target="_blank" rel="noopener">
+                        Official A24 page
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=yrK1f4TsQfM" target="_blank" rel="noopener">
+                        Official trailer
+                    </a>
+                </li>
+                <li>
+                    <a href="https://collider.com/swiss-army-man-review-daniel-radcliffe/" target="_blank" rel="noopener">
+                        Collider review
+                    </a>
+                </li>
+            </ul>
+
+            <div class="right-gallery">
+            <img src="images/image_1.png" alt="Hank rides Manny to the shore">
+            <img src="images/image_2.jpg" alt="Hank teaching Manny how to talk">
+            <img src="images/image_3.jpg" alt="Hank carrying Manny on his back">
+</div>
+        </aside>
 
     </div>
 
 </body>
-
 </html>
