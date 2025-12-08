@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<title>Resolution Dependent Layout</title>
 <!-- STEP 1: Normalize CSS so all styles start from scratch -->
-
+<link href="css/normalize.css" rel="stylesheet"/>
 <!-- STEP 2: Reset the zoom and set the device width to equal the width -->
-
+<meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
 <!-- STEP 3: Add the main stylesheet with a link element, including a media attribute for screen, then proceed to the file 'css/style.css' for STEP 4 -->
+<link href="css/style.css" rel="stylesheet" media="screen"/>
 
 <!-- STEP 10: Add another link element to attach a CSS file for print use only -->
-
+<link href="css/print.css" rel="stylesheet" media="print">
 	</head>
 	<body>
 		<div id="container">
@@ -19,7 +20,7 @@
 			</header>
 			<main>
 				<section>
-					<h2>Section 1</h2>
+					<h2>Section 1</h2>	
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend condimentum justo, ac adipiscing nisi ultrices sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eget mauris at quam feugiat elementum. Donec tincidunt tincidunt dui interdum tempor. Duis vel egestas urna. Fusce nisl dolor, porttitor sed pellentesque et, aliquam a ante. Sed a dui non arcu eleifend sollicitudin ut sit amet justo. Sed leo metus, tempus a luctus sit amet, ultricies sed libero. Suspendisse luctus dui eget odio vulputate pulvinar lacinia tortor blandit. Nam commodo pretium libero sodales lacinia. Aliquam accumsan tempus luctus.</p>
 				</section>
 				<section>
@@ -32,7 +33,7 @@
 				</section>
 			</main>
 			<footer>
-				<p>Main Page Footer</p>
+				<p><small>Main Page Footer</small></p>
 			</footer>
 		</div>
 	</body>
