@@ -256,3 +256,25 @@ body {
         flex-direction: column;
     }
 }
+
+/* Atari rainbow bar */
+.rainbow-bar
+{
+    height: 10px;
+    border: 3px solid #111;
+    border-top: 0;
+    margin-top: 14px;
+    background: linear-gradient(
+        90deg,
+        #e53935 0%,
+        #e53935 20%,
+        #fb8c00 20%,
+        #fb8c00 40%,
+        #fdd835 40%,
+        #fdd835 60%,
+        #43a047 60%,
+        #43a047 80%,
+        #1e88e5 80%,
+        #1e88e5 100%
+    );
+}
