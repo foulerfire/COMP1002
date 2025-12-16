@@ -278,3 +278,21 @@ body {
         #1e88e5 100%
     );
 }
+
+.product-figure img
+{
+    width: 100%;
+    max-width: 500px;   /* change this number */
+    height: auto;       /* keeps aspect ratio */
+}
+.intro
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;   /* ← THIS centers vertically */
+}
+
+.intro .product-figure
+{
+    margin: 0;
+}
