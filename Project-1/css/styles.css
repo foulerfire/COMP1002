@@ -279,20 +279,104 @@ body {
     );
 }
 
-.product-figure img
+/* =========================
+   Shared catalog image base
+   ========================= */
+.product-figure img,
+.why-image img
 {
+    display: block;
     width: 100%;
-    max-width: 500px;   /* change this number */
-    height: auto;       /* keeps aspect ratio */
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid #111;
+    background-color: #fff;
+    padding: 6px;
 }
+
+/* =========================
+   Intro section
+   ========================= */
 .intro
 {
     display: flex;
     gap: 20px;
-    align-items: center;   /* ← THIS centers vertically */
+    align-items: center;
 }
 
 .intro .product-figure
 {
-    margin: 0;
+    margin-left: auto;
+}
+
+.intro .product-figure img
+{
+    max-width: 500px;
+}
+
+/* =========================
+   Why Atari section
+   ========================= */
+.why-atari
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.why-image img
+{
+    max-width: 260px;
+}
+
+.why-text
+{
+    flex: 1;
+}
+
+.why-text ul
+{
+    list-style-position: inside;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+/* =========================
+   Starter bundle section
+   ========================= */
+.bundle
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.bundle-figure
+{
+    margin-left: auto;
+}
+
+.bundle .product-figure img
+{
+    max-width: 290px;
+}
+
+/* =========================
+   Available cartridges section
+   ========================= */
+.games-preview
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.games-text
+{
+    flex: 1;
+}
+
+.games-preview .product-figure img
+{
+    max-width: 320px;
 }
