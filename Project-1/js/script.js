@@ -10,11 +10,7 @@ document.addEventListener("DOMContentLoaded", function ()
         const stars = card.querySelectorAll(".star");
         const ratingValue = card.querySelector(".rating-value");
 
-        // safety check (in case a card is missing parts)
-        if (!ratingValue || stars.length === 0)
-        {
-            return;
-        }
+
 
         stars.forEach(function (star)
         {
