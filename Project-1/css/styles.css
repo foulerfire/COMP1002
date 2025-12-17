@@ -1,56 +1,62 @@
-/* Retro Product Micro-Site (Atari 2600) */
-/* Stylesheet: css/styles.css */
+/* Atari 2600 stylesheet */
 
-/* Basic reset-ish */
-* {
+* 
+{
     box-sizing: border-box;
 }
 
-body {
+body 
+{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #0b3b44; /* teal backdrop (feels retro without being loud) */
+    background: #0b3b44;
     color: #111;
 }
 
-/* Page container */
-.page {
+/* page container */
+.page 
+{
     width: 1100px;
     max-width: 95%;
     margin: 24px auto;
-    background: #f4f0e6; /* warm catalog paper */
+    background: #f4f0e6;
     border: 6px solid #111;
     padding: 18px;
 }
 
-/* Header */
-.site-header {
+/* header */
+.site-header 
+{
     border: 3px solid #111;
     padding: 14px 16px;
     background: #fff7e6;
 }
 
-.site-header h1 {
+.site-header h1 
+{
     margin: 0;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     font-size: 1.6rem;
 }
 
-.tagline {
+.tagline 
+{
     margin: 6px 0 0 0;
     font-size: 0.95rem;
     color: #333;
 }
 
-/* Navigation */
-.global-nav {
+/* navigation */
+.global-nav 
+{
     margin-top: 14px;
     border: 3px solid #111;
     background: #efe6d6;
 }
 
-.global-nav ul {
+.global-nav ul 
+{
     list-style: none;
     padding: 10px;
     margin: 0;
@@ -59,7 +65,8 @@ body {
     gap: 10px;
 }
 
-.global-nav a {
+.global-nav a 
+{
     display: inline-block;
     padding: 8px 12px;
     border: 2px solid #111;
@@ -71,75 +78,91 @@ body {
     font-size: 0.85rem;
 }
 
-.global-nav a:hover {
-    background: #ffe08a; /* “catalog highlight” */
+.global-nav a:hover 
+{
+    background: #ffe08a;
 }
 
-.global-nav a[aria-current="page"] {
+.global-nav a[aria-current="page"] 
+{
     background: #111;
     color: #fff;
 }
 
-/* Main content */
-.content {
+/* main content */
+.content 
+{
     margin-top: 14px;
 }
 
-/* Catalog section blocks */
-.content section {
+/* catalog section blocks */
+.content section 
+{
     border: 3px solid #111;
     background: #fff;
     padding: 14px 16px;
     margin-bottom: 14px;
 }
 
-.content h2 {
+.content h2 
+{
     margin: 0 0 10px 0;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     font-size: 1.1rem;
 }
 
-.content p {
+.content p 
+{
     margin: 0 0 10px 0;
     line-height: 1.5;
 }
 
 .content ul,
-.content ol {
+.content ol 
+{
     margin: 0 0 10px 20px;
     line-height: 1.5;
 }
 
-.content li {
+.content li 
+{
     margin-bottom: 6px;
 }
 
-/* Figure styling */
-.product-figure {
+/*outer frame styling */
+.product-figure 
+{
     margin: 12px 0 0 0;
     padding: 12px;
     border: 2px dashed #111;
     background: #fffdf6;
 }
 
-.product-figure img {
-    display: block;
-    width: 100%;
-    max-width: 520px;
-    margin: 0 auto;
-    border: 2px solid #111;
-}
-
-.product-figure figcaption {
+.product-figure figcaption 
+{
     margin-top: 8px;
     font-size: 0.9rem;
     color: #333;
     text-align: center;
 }
 
-/* Footer */
-.site-footer {
+/* inner frame catalog base design  */
+.product-figure img,
+.why-image img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid #111;
+    background-color: #fff;
+    padding: 6px;
+}
+
+/* footer */
+.site-footer 
+{
     border: 3px solid #111;
     background: #efe6d6;
     padding: 12px 16px;
@@ -147,45 +170,52 @@ body {
     font-size: 0.9rem;
 }
 
-.site-footer p {
+.site-footer p 
+{
     margin: 6px 0;
 }
 
-/* Games page styling */
-.game-list {
+/* games page styling */
+.game-list 
+{
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
 }
 
-.game-card {
+.game-card 
+{
     border: 3px solid #111;
     background: #fff;
     padding: 14px 16px;
 }
 
-.game-card h3 {
+.game-card h3 
+{
     margin: 0 0 6px 0;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     font-size: 1rem;
 }
 
-.game-meta {
+.game-meta 
+{
     margin: 0 0 10px 0;
     font-size: 0.9rem;
     color: #444;
 }
 
-.rating {
+.rating 
+{
     margin-top: 10px;
     display: flex;
     gap: 6px;
     align-items: center;
 }
 
-/* Stars look clickable */
-.star {
+/* makes stars look clickable */
+.star 
+{
     border: 2px solid #111;
     background: #fff;
     cursor: pointer;
@@ -194,37 +224,42 @@ body {
     padding: 6px 8px;
 }
 
-/* Hover = preview vibe */
-.star:hover {
+.star:hover 
+{
     background: #ffe08a;
 }
 
-/* This class is what your JS can toggle on stars */
-.star.filled {
+/* JS that toggles stars on or off */
+.star.filled 
+{
     background: #111;
     color: #fff;
 }
 
-.rating-output {
+.rating-output 
+{
     margin: 10px 0 0 0;
     font-size: 0.9rem;
     color: #333;
 }
 
-/* Feedback form */
-.feedback-form form {
+/* feedback form */
+.feedback-form form 
+{
     border: 2px dashed #111;
     background: #fffdf6;
     padding: 12px;
 }
 
-.feedback-form label {
+.feedback-form label 
+{
     font-weight: bold;
 }
 
 .feedback-form input,
 .feedback-form select,
-.feedback-form textarea {
+.feedback-form textarea 
+{
     width: 100%;
     max-width: 520px;
     border: 2px solid #111;
@@ -232,7 +267,8 @@ body {
     font-family: inherit;
 }
 
-.feedback-form button {
+.feedback-form button 
+{
     border: 2px solid #111;
     background: #111;
     color: #fff;
@@ -242,19 +278,9 @@ body {
     cursor: pointer;
 }
 
-.feedback-form button:hover {
+.feedback-form button:hover 
+{
     background: #333;
-}
-
-/* Simple responsive tweak */
-@media (max-width: 900px) {
-    .game-list {
-        grid-template-columns: 1fr;
-    }
-
-    .global-nav ul {
-        flex-direction: column;
-    }
 }
 
 /* Atari rainbow bar */
@@ -264,7 +290,7 @@ body {
     border: 3px solid #111;
     border-top: 0;
     margin-top: 14px;
-    background: linear-gradient(
+    background: linear-gradient( /* happy with how this turned out, but this gradient was not fun to figure out */
         90deg,
         #e53935 0%,
         #e53935 20%,
@@ -278,38 +304,38 @@ body {
         #1e88e5 100%
     );
 }
+
 .rainbow-bar.bottom
 {
-    border-top: 3px solid #111;
-    border-bottom: 0;
+    border-top: 0;
+    border-bottom: 3px solid #111;
     margin-top: 0;
     margin-bottom: 14px;
 }
-/* =========================
-   Shared catalog image base
-   ========================= */
-.product-figure img,
-.why-image img
-{
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border: 2px solid #111;
-    background-color: #fff;
-    padding: 6px;
-}
 
-/* =========================
-   Intro section
-   ========================= */
-.intro
+/* flex layout for image and text sections */
+.intro,
+.why-atari,
+.bundle,
+.games-preview
 {
     display: flex;
-    gap: 20px;
     align-items: center;
 }
 
+.intro
+{
+    gap: 20px;
+}
+
+.why-atari,
+.bundle,
+.games-preview
+{
+    gap: 30px;
+}
+
+/* intro section */
 .intro .product-figure
 {
     margin-left: auto;
@@ -320,16 +346,7 @@ body {
     max-width: 500px;
 }
 
-/* =========================
-   Why Atari section
-   ========================= */
-.why-atari
-{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
+/* why Atari section */
 .why-image img
 {
     max-width: 200px;
@@ -338,25 +355,19 @@ body {
 .why-text
 {
     flex: 1;
+    text-align: left;
+    margin-right: 100px;  
+    padding-left: 75px;  
 }
 
 .why-text ul
 {
-    list-style-position: inside;
-    padding-left: 0;
+    list-style-position: outside;
+    padding-left: 0px;   
     margin-top: 10px;
 }
 
-/* =========================
-   Starter bundle section
-   ========================= */
-.bundle
-{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
+/* starter bundle*/
 .bundle-figure
 {
     margin-left: auto;
@@ -367,16 +378,7 @@ body {
     max-width: 290px;
 }
 
-/* =========================
-   Available cartridges section
-   ========================= */
-.games-preview
-{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
+/* available cartridges */
 .games-text
 {
     flex: 1;
@@ -387,7 +389,16 @@ body {
     max-width: 320px;
 }
 
-.why-atari .why-text
+/* responsive tweak */
+@media (max-width: 900px) 
 {
-    text-align: right;
+    .game-list 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .global-nav ul 
+    {
+        flex-direction: column;
+    }
 }
