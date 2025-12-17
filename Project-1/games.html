@@ -130,4 +130,71 @@
                     <h3>Missile Command</h3>
                     <p class="game-meta">Genre: Strategy / Action</p>
                     <p>
-                        Protect your cities b
+                        Protect your cities by intercepting incoming missiles. Simple controls, high tension, big scores.
+                    </p>
+
+                    <!-- rating stars -->
+                    <div class="rating" aria-label="Missile Command rating">
+                        <button class="star" type="button" data-value="1" aria-label="Rate 1 star">★</button>
+                        <button class="star" type="button" data-value="2" aria-label="Rate 2 stars">★</button>
+                        <button class="star" type="button" data-value="3" aria-label="Rate 3 stars">★</button>
+                        <button class="star" type="button" data-value="4" aria-label="Rate 4 stars">★</button>
+                        <button class="star" type="button" data-value="5" aria-label="Rate 5 stars">★</button>
+                    </div>
+
+                    <p class="rating-output">Rating: <span class="rating-value">Not rated yet</span></p>
+                </article>
+
+            </section>
+
+            <!-- feedback form -->
+            <section class="feedback-form">
+                <h2>Leave feedback</h2>
+
+                <form action="#" method="post">
+
+                    <p>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name">
+                    </p>
+
+                    <p>
+                        <label for="favorite">Favorite cartridge:</label><br>
+                        <select id="favorite" name="favorite">
+                            <option value="space-invaders">Space Invaders</option>
+                            <option value="pitfall">Pitfall!</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="asteroids">Asteroids</option>
+                            <option value="missile-command">Missile Command</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="comment">Comment:</label><br>
+                        <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Submit feedback</button>
+                    </p>
+
+                </form>
+            </section>
+
+        </main>
+
+        <!-- rainbow bar for bottom -->
+        <div class="rainbow-bar bottom" aria-hidden="true"></div>
+
+        <!-- footer -->
+        <footer class="site-footer">
+            <p>© 1978 Atari, Inc. All rights reserved.</p>
+            <p>For catalog inquiries, contact your local Atari dealer.</p>
+        </footer>
+
+    </div>
+
+    <!-- external javascript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
