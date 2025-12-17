@@ -1,4 +1,4 @@
-// star rating system Atari 2600
+// star rating system and feedback form
 
 document.addEventListener("DOMContentLoaded", function ()
 {
@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", function ()
     {
         const stars = card.querySelectorAll(".star");
         const ratingValue = card.querySelector(".rating-value");
+
+        // safety check (in case a card is missing parts)
+        if (!ratingValue || stars.length === 0)
+        {
+            return;
+        }
 
         stars.forEach(function (star)
         {
@@ -31,19 +37,23 @@ document.addEventListener("DOMContentLoaded", function ()
                     }
                 });
 
-                // Update the text for THIS game card only
+                // update the text for current game card only
                 ratingValue.textContent = selectedRating + " / 5";
             });
         });
     });
-    // confirms feedback form submit works 
-    const feedbackForm = document.querySelector(".feedback-form form"); 
-    if (feedbackForm) 
-    { 
-        feedbackForm.addEventListener("submit", function (e) 
-        { 
-            e.preventDefault(); alert("Thank you for your feedback!"); 
-            feedbackForm.reset(); 
-        }); 
+
+    // confirms feedback form submit works
+    const feedbackForm = document.querySelector(".feedback-form form");
+
+    if (feedbackForm)
+    {
+        feedbackForm.addEventListener("submit", function (e)
+        {
+            e.preventDefault();
+            alert("Thank you for your feedback!");
+            feedbackForm.reset();
+        });
     }
 });
+

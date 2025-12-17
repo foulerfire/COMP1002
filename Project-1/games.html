@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atari 2600 | Game library & ratings</title>
+
+    <!-- external css -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
     <div class="page">
 
+        <!-- header -->
         <header class="site-header">
             <h1>Atari Video Computer System</h1>
             <p class="tagline">Electronic entertainment for your home television.</p>
         </header>
-<div class="rainbow-bar" aria-hidden="true"></div>
 
+        <div class="rainbow-bar" aria-hidden="true"></div>
+
+        <!-- nav bar -->
         <nav class="global-nav" aria-label="Site navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                
                 <li><a href="games.html" aria-current="page">Game Library &amp; Ratings</a></li>
                 <li><a href="support.html">Support</a></li>
                 <li><a href="company.html">About Atari</a></li>
@@ -28,16 +33,19 @@
 
         <main class="content">
 
+            <!-- games page intro -->
             <section class="games-intro">
                 <h2>Game library</h2>
                 <p>
-                    Rate your favorite Atari cartridges below. Click a star to leave a rating. Your rating will appear
-                    instantly on the page.
+                    Rate your favorite Atari cartridges below. Click a star to leave a rating.
+                    Your rating will appear instantly on the page.
                 </p>
             </section>
 
+            <!-- game cards and ratings -->
             <section class="game-list">
 
+                <!-- space invaders -->
                 <article class="game-card" data-game="space-invaders">
                     <h3>Space Invaders</h3>
                     <p class="game-meta">Genre: Action / Shooter</p>
@@ -45,6 +53,7 @@
                         Defend the earth from waves of descending invaders. Fast, tense, and perfect for short play sessions.
                     </p>
 
+                    <!-- rating stars -->
                     <div class="rating" aria-label="Space Invaders rating">
                         <button class="star" type="button" data-value="1" aria-label="Rate 1 star">★</button>
                         <button class="star" type="button" data-value="2" aria-label="Rate 2 stars">★</button>
@@ -56,6 +65,7 @@
                     <p class="rating-output">Rating: <span class="rating-value">Not rated yet</span></p>
                 </article>
 
+                <!-- pitfall -->
                 <article class="game-card" data-game="pitfall">
                     <h3>Pitfall!</h3>
                     <p class="game-meta">Genre: Adventure / Platform</p>
@@ -63,6 +73,7 @@
                         Run, jump, and swing through jungle hazards to collect treasures before time runs out.
                     </p>
 
+                    <!-- rating stars -->
                     <div class="rating" aria-label="Pitfall rating">
                         <button class="star" type="button" data-value="1" aria-label="Rate 1 star">★</button>
                         <button class="star" type="button" data-value="2" aria-label="Rate 2 stars">★</button>
@@ -74,6 +85,7 @@
                     <p class="rating-output">Rating: <span class="rating-value">Not rated yet</span></p>
                 </article>
 
+                <!-- adventure -->
                 <article class="game-card" data-game="adventure">
                     <h3>Adventure</h3>
                     <p class="game-meta">Genre: Adventure</p>
@@ -81,6 +93,7 @@
                         Explore castles and mazes, recover the enchanted chalice, and watch out for roaming dragons.
                     </p>
 
+                    <!-- rating stars -->
                     <div class="rating" aria-label="Adventure rating">
                         <button class="star" type="button" data-value="1" aria-label="Rate 1 star">★</button>
                         <button class="star" type="button" data-value="2" aria-label="Rate 2 stars">★</button>
@@ -92,6 +105,7 @@
                     <p class="rating-output">Rating: <span class="rating-value">Not rated yet</span></p>
                 </article>
 
+                <!-- asteroids -->
                 <article class="game-card" data-game="asteroids">
                     <h3>Asteroids</h3>
                     <p class="game-meta">Genre: Action / Arcade</p>
@@ -99,6 +113,7 @@
                         Pilot your ship through asteroid fields and flying saucers. Classic arcade-style scoring action.
                     </p>
 
+                    <!-- rating stars -->
                     <div class="rating" aria-label="Asteroids rating">
                         <button class="star" type="button" data-value="1" aria-label="Rate 1 star">★</button>
                         <button class="star" type="button" data-value="2" aria-label="Rate 2 stars">★</button>
@@ -110,66 +125,9 @@
                     <p class="rating-output">Rating: <span class="rating-value">Not rated yet</span></p>
                 </article>
 
+                <!-- missile command -->
                 <article class="game-card" data-game="missile-command">
                     <h3>Missile Command</h3>
                     <p class="game-meta">Genre: Strategy / Action</p>
                     <p>
-                        Protect your cities by intercepting incoming missiles. Simple controls, high tension, big scores.
-                    </p>
-
-                    <div class="rating" aria-label="Missile Command rating">
-                        <button class="star" type="button" data-value="1" aria-label="Rate 1 star">★</button>
-                        <button class="star" type="button" data-value="2" aria-label="Rate 2 stars">★</button>
-                        <button class="star" type="button" data-value="3" aria-label="Rate 3 stars">★</button>
-                        <button class="star" type="button" data-value="4" aria-label="Rate 4 stars">★</button>
-                        <button class="star" type="button" data-value="5" aria-label="Rate 5 stars">★</button>
-                    </div>
-
-                    <p class="rating-output">Rating: <span class="rating-value">Not rated yet</span></p>
-                </article>
-
-            </section>
-
-            <section class="feedback-form">
-                <h2>Leave feedback</h2>
-                <form action="#" method="post">
-                    <p>
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name">
-                    </p>
-
-                    <p>
-                        <label for="favorite">Favorite cartridge:</label><br>
-                        <select id="favorite" name="favorite">
-                            <option value="space-invaders">Space Invaders</option>
-                            <option value="pitfall">Pitfall!</option>
-                            <option value="adventure">Adventure</option>
-                            <option value="asteroids">Asteroids</option>
-                            <option value="missile-command">Missile Command</option>
-                        </select>
-                    </p>
-
-                    <p>
-                        <label for="comment">Comment:</label><br>
-                        <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
-                    </p>
-
-                    <p>
-                        <button type="submit">Submit feedback</button>
-                    </p>
-                </form>
-            </section>
-
-        </main>
-<div class="rainbow-bar bottom" aria-hidden="true"></div>
-
-        <footer class="site-footer">
-            <p>© 1978 Atari, Inc. All rights reserved.</p>
-            <p>For catalog inquiries, contact your local Atari dealer.</p>
-        </footer>
-
-    </div>
-
-    <script src="js/script.js"></script>
-</body>
-</html>
+                        Protect your cities b
